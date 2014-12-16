@@ -35,7 +35,7 @@ public class WeatherServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         ServletOutputStream out = resp.getOutputStream();
-        StringBuilder response = new StringBuilder("Current Weather: ");
+        StringBuilder response = new StringBuilder("Current Java Weather: ");
 
         try {
             ObjectMapper mapper = new ObjectMapper();
