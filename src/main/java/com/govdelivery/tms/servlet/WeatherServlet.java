@@ -34,6 +34,9 @@ public class WeatherServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        resp.setContentType("text/plain");
+        resp.setCharacterEncoding("UTF-8");
+
         ServletOutputStream out = resp.getOutputStream();
         StringBuilder response = new StringBuilder("Current Java Weather: ");
 
